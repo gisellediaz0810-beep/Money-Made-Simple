@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Money Made Simple</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+  <header>
+    <h1>Money Made Simple</h1>
+    <p>Learn money skills. Build confidence. Take control of your future.</p>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#finance">Personal Finance</a>
+      <a href="#business">Business Basics</a>
+      <a href="#tools">Tools</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home">
+      <h2>Welcome to Money Made Simple</h2>
+      <p>
+        Money is something we all use, but most of us don’t learn how to
+        manage it until we’re already making financial decisions.
+        Money Made Simple was created to make those skills easier to understand.
+      </p>
+      <p>
+        Whether you’re learning how to budget, curious about starting a
+        business, or just want to feel more confident with money, you’re
+        in the right place.
+      </p>
+    </section>
+
+    <section id="finance">
+      <h2>Personal Finance</h2>
+      <p><strong>Budgeting:</strong> A budget is a plan for how you will use your money.</p>
+      <p><strong>Saving:</strong> Saving means setting money aside for future needs or goals.</p>
+      <p><strong>Needs:</strong> Things you must pay for, such as transportation or school expenses.</p>
+      <p><strong>Wants:</strong> Things you enjoy but do not necessarily need.</p>
+    </section>
+
+    <section id="business">
+      <h2>Business Basics</h2>
+      <p><strong>Revenue:</strong> The money a business earns from selling products or services.</p>
+      <p><strong>Expenses:</strong> The costs of running a business.</p>
+      <p><strong>Profit:</strong> The money left after expenses are subtracted from revenue.</p>
+
+      <p class="formula">Profit = Revenue − Expenses</p>
+    </section>
+
+    <section id="tools">
+      <h2>Budget Planner</h2>
+      <p>Enter your monthly amounts to see how much money you have left.</p>
+
+      <label for="income">Monthly income</label>
+      <input type="number" id="income" placeholder="Example: 1000">
+
+      <label for="needs">Needs</label>
+      <input type="number" id="needs" placeholder="Example: 500">
+
+      <label for="wants">Wants</label>
+      <input type="number" id="wants" placeholder="Example: 200">
+
+      <label for="savings">Savings</label>
+      <input type="number" id="savings" placeholder="Example: 150">
+
+      <button onclick="calculateBudget()">Calculate Budget</button>
+
+      <div id="results">
+        <p>Total planned spending: <strong>$0.00</strong></p>
+        <p>Money left: <strong>$0.00</strong></p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Money Made Simple · Educational financial resources for students</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
